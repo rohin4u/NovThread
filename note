@@ -1,0 +1,38 @@
+Threading:
+The point/path of execution is called thread, ie, main()
+
+MultiThreading:
+
+Test->new MyThread()->start()->Thread(Start)->MyThread->run()
+
+To change name of the thread : Thread.setName(String name);
+To get name of the thread : Thread.getName();
+To find the name of the Thread class imported : Thread.getClass().getName();
+To get the priority of the Thread: Thread.getPriority();
+so jave provides 0 to 10 for priority. here 0 means less priority and 10 means higher priority
+Java bydefault gives priority number 5 for every thread.
+Once the thread is started, we cann't start it once again, otherwise we will get runtime exception saying "IlligalStateException"
+We shall not use run() for thread execution because we will not get thread advantage
+
+
+Runnable() interface:
+For implementing interface, thread has introduced one interface which is called 
+Runnable(), it consists only one method called run();
+
+So to make the Thread Execution certain we have follwoing method to execute on thread object
+1. Yield()
+2. Join();
+3.sleep();
+
+1. Yield(): if this method is called on any thread object then that particular 
+thread execution is delayed and other waiting thread executed first and then 
+that yeilded object will be executed at last.
+
+2.join(): if inside any thread area we write join method on any thread object
+so that thread will be executed first and waiting thread would be executed last
+3. Interrupted(); 
+
+
+
+
+
